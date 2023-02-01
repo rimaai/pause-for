@@ -1,16 +1,16 @@
 const test = require("tape");
-const waitFor = require("./");
+const pauseFor = require("./");
 
 test("should be a promise", (t) => {
   t.plan(1);
-  t.equal(typeof waitFor().then, 'function');
+  t.equal(typeof pauseFor().then, 'function');
 });
 
 test("should wait", (t) => {
   t.plan(1);
   const order = [];
 
-  waitFor(5).then((_) => {
+  pauseFor(5).then((_) => {
     order.push("b");
     t.deepEqual(["a", "b"], order);
   });
@@ -21,7 +21,7 @@ test("should push the event to the end of event callstack even while entering ti
   t.plan(1);
   const order = [];
 
-  waitFor(0).then((_) => {
+  pauseFor(0).then((_) => {
     order.push("a");
     t.deepEqual(["b", "c", "a"], order);
   });

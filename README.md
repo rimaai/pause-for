@@ -1,24 +1,24 @@
-# wait-for
+# pause-for
 A tiny JavaScript utility for delaying the execution.
 
 ## Installation
 ```bash
-npm install wait-for
+npm install pause-for
 ```
 
 ## Usage
 ```javascript
-const waitFor = require('wait-for');
+const pauseFor = require('pause-for');
 
 doSomething1();
-await waitFor(1000);
+await pauseFor(1000);
 doSomething2();
-await waitFor(500);
+await pauseFor(500);
 doSomething3();
 ```
 
 ## API
-`waitFor(ms: number): Promise<void>`
+`pauseFor(ms: number): Promise<void>`
 ### Parameters
 `ms`: The number of milliseconds to wait before resolving the promise.
 ### Returns

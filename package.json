@@ -1,10 +1,10 @@
 {
-  "name": "wait-for",
+  "name": "pause-for",
   "version": "1.0.0",
-  "homepage": "https://github.com/rimaai/wait-for",
+  "homepage": "https://github.com/rimaai/pause-for",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rimaai/wait-for.git"
+    "url": "git+https://github.com/rimaai/pause-for.git"
   },
   "main": "index.js",
   "scripts": {
